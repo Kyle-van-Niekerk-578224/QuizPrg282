@@ -20,6 +20,21 @@ namespace Activity
         private void button1_Click(object sender, EventArgs e)
         {
             //On Button Click, Read + display data from txt
+            //
+            int counter = 0;
+            string line, outString;
+
+            System.IO.StreamReader file =
+                new System.IO.StreamReader(@".\bin\debug\data.txt");
+            while ((line = file.ReadLine()) != null)
+            {
+                outString = line;
+                listBox1.Items.Add(outString);
+                //System.Console.WriteLine(line);
+                counter++;
+            }
+
+            file.Close();
         }
     }
 }
