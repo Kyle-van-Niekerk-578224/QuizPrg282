@@ -20,7 +20,7 @@ namespace Activity
         private void button1_Click(object sender, EventArgs e)
         {
             //On Button Click, Read + display data from txt
-            //
+            //This was edited in GitHub
             int counter = 0;
             string line, outString;
 
